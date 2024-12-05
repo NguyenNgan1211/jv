@@ -20,6 +20,7 @@ public class News {
 		this.menuid = menuid;
 		this.image = image;
 	}
+<<<<<<< HEAD
 	
 	public News(String newstitle, String newscontent, int authorid, int menuid, String image) {
 		super();
@@ -29,6 +30,8 @@ public class News {
 		this.menuid = menuid;
 		this.image = image;
 	}
+=======
+>>>>>>> 39d0ee0 (aa)
 	public int getNewsid() {
 		return newsid;
 	}

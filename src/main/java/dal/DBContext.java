@@ -10,12 +10,21 @@ public class DBContext {
     public static Connection getConnection() {
         String user = "root";
         String pass = "";  // Update this if there's a root password in MySQL
+<<<<<<< HEAD
         String url = "jdbc:mysql://localhost:3307/qlsv";  // Ensure correct port number
+=======
+        String url = "jdbc:mysql://localhost:3306/qlsv";  // Ensure correct port number
+        
+>>>>>>> 39d0ee0 (aa)
 
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             conn = DriverManager.getConnection(url, user, pass);
+<<<<<<< HEAD
             // System.out.println("Connection successful!");
+=======
+             System.out.println("Connection successful!");
+>>>>>>> 39d0ee0 (aa)
         } catch (ClassNotFoundException e) {
             System.out.println("MySQL JDBC Driver not found. Make sure 'mysql-connector-java' is added to your project libraries.");
             e.printStackTrace();

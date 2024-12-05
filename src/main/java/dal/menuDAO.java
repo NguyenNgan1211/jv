@@ -15,7 +15,11 @@ public class menuDAO {
         List<Menu> list = new ArrayList<>();
         String sql = "SELECT * FROM menu";
         
+<<<<<<< HEAD
         // Use try-with-resources to manage resources
+=======
+      
+>>>>>>> 39d0ee0 (aa)
         try (Connection connection = DBContext.getConnection();
              PreparedStatement ps = connection.prepareStatement(sql);
              ResultSet rs = ps.executeQuery()) {
@@ -30,11 +34,20 @@ public class menuDAO {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+<<<<<<< HEAD
         return list;
     }
     public Menu  getMenuById(int menuid) {
     	String sql = "select * from `menu`"+
     "where `menuid` = ?";
+=======
+        
+        return list;
+    }
+    public Menu  getMenuById(int menuid) {
+    	String sql = "select * from 'menu'"+
+    "where 'id' = ?";
+>>>>>>> 39d0ee0 (aa)
     	try {Connection connection = DBContext.getConnection();
     		PreparedStatement ps = connection.prepareStatement(sql);
     		ps.setInt(1,menuid);
@@ -69,9 +82,15 @@ public class menuDAO {
     }
     
     public void update(Menu m) {
+<<<<<<< HEAD
     	String sql ="update  `menu`  \r\n"+
     		    "set `menuname` = ?, `menudescription` = ? \r\n"
     			+"where menuid = ?;";
+=======
+    	String sql ="update  'menu'  \r\n"+
+    		    "set 'menuname' = ?, 'menudescription' = ? \r\n"
+    			+"where id = ?;";
+>>>>>>> 39d0ee0 (aa)
     		    	try {Connection connection = DBContext.getConnection();
     				PreparedStatement ps = connection.prepareStatement(sql);
     				ps.setString(1,m.getMenuname());
@@ -85,8 +104,13 @@ public class menuDAO {
     		    	}
     }
     public void delete(int menuid) {
+<<<<<<< HEAD
     	String  sql = "delete from `menu`\r\n"
     			+"where `menuid`=?;";
+=======
+    	String  sql = "delete from 'menu'\r\n"
+    			+"where 'id'=?;";
+>>>>>>> 39d0ee0 (aa)
     	try {
     		Connection connection = DBContext.getConnection();
 			PreparedStatement ps = connection.prepareStatement(sql);

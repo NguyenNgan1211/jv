@@ -10,9 +10,13 @@ import java.io.IOException;
 import dal.menuDAO;
 import model.Menu;
 
+<<<<<<< HEAD
 /**
  * Servlet implementation class UpdateMenuServlet
  */
+=======
+
+>>>>>>> 39d0ee0 (aa)
 public class UpdateMenuServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -32,7 +36,10 @@ public class UpdateMenuServlet extends HttpServlet {
 		int menuid = Integer.parseInt(id);
 		menuDAO cd = new menuDAO();
 		Menu m = cd.getMenuById(menuid);
+<<<<<<< HEAD
 		 System.out.println("Retrieved Menu: " + m);
+=======
+>>>>>>> 39d0ee0 (aa)
 		request.setAttribute("menu2",m);
 		request.getRequestDispatcher("/admin/updateMenu.jsp").forward(request, response);
 		}
@@ -47,10 +54,16 @@ public class UpdateMenuServlet extends HttpServlet {
 		String menudescription = request.getParameter("menudescription");
 		int menuid;
 		menuid = Integer.parseInt(id);
+<<<<<<< HEAD
 		System.out.println("id" + id);
 		Menu m = new Menu(menuid,menuname,menudescription);
 		cd.update(m);
 		response.sendRedirect("menu");
+=======
+		Menu m = new Menu(menuid,menuname,menudescription);
+		cd.update(m);
+		response.sendRedirect("MenuController");
+>>>>>>> 39d0ee0 (aa)
 
 	}
 

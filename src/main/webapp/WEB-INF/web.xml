@@ -114,6 +114,7 @@
     <servlet-name>AddMenuServlett</servlet-name>
     <url-pattern>/add-menu</url-pattern>
   </servlet-mapping>
+<<<<<<< HEAD
   <servlet>
     <description></description>
     <display-name>NewsController</display-name>
@@ -154,4 +155,6 @@
     <servlet-name>DeleteNewsServlet</servlet-name>
     <url-pattern>/DeleteNewsServlet</url-pattern>
   </servlet-mapping>
+=======
+>>>>>>> 39d0ee0 (aa)
 </web-app>

@@ -14,7 +14,12 @@ public class loginDAO {
 
         
         try {
+<<<<<<< HEAD
             conn = new DBContext().getConnection(); 
+=======
+            new DBContext();
+			conn = DBContext.getConnection(); 
+>>>>>>> 39d0ee0 (aa)
             ps = conn.prepareStatement(query);
             ps.setString(1, username);
             ps.setString(2, password);
@@ -48,7 +53,12 @@ public class loginDAO {
         ResultSet rs = null;
         
         try {
+<<<<<<< HEAD
             conn = new DBContext().getConnection(); 
+=======
+            new DBContext();
+			conn = DBContext.getConnection(); 
+>>>>>>> 39d0ee0 (aa)
             ps = conn.prepareStatement(query);
             ps.setString(1, username);
             rs = ps.executeQuery();

@@ -30,7 +30,11 @@ public class DeleteMenuServlet extends HttpServlet {
 		int menuid = Integer.parseInt(id);
 		menuDAO cd = new menuDAO();
 		cd.delete(menuid);
+<<<<<<< HEAD
 		response.sendRedirect("menu");
+=======
+		response.sendRedirect("MenuController");
+>>>>>>> 39d0ee0 (aa)
 	}
 
 	/**

@@ -50,7 +50,11 @@
 					<form action="login" method="post">
 						<div
 							class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
+<<<<<<< HEAD
 							<p class="lead fw-normal mb-0 me-3">Sign in with asdf</p>
+=======
+							<p class="lead fw-normal mb-0 me-3">Sign in with</p>
+>>>>>>> 39d0ee0 (aa)
 							<button type="button" data-mdb-button-init data-mdb-ripple-init
 								class="btn btn-primary btn-floating mx-1">
 								<i class="fab fa-facebook-f"></i>

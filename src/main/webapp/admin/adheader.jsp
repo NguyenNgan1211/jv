@@ -297,6 +297,7 @@
           
         </ul>
       </li><!-- End Components Nav -->
+<<<<<<< HEAD
 	<li class="nav-item">
         <a href="news" class="nav-link collapsed"  data-bs-target="#news-nav" data-bs-toggle="collapse" >
           <i  class="bi bi-menu-button-wide"></i><span>Quản lý bài viết</span><i class="bi bi-chevron-down ms-auto"></i>
@@ -315,6 +316,9 @@
           
         </ul>
       </li><!-- End Components Nav -->
+=======
+
+>>>>>>> 39d0ee0 (aa)
       <li class="nav-item">
         <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
           <i class="bi bi-journal-text"></i><span>Forms</span><i class="bi bi-chevron-down ms-auto"></i>

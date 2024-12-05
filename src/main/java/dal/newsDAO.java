@@ -7,8 +7,11 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
+<<<<<<< HEAD
 
 import model.Menu;
+=======
+>>>>>>> 39d0ee0 (aa)
 import model.News;
 
 public class newsDAO {
@@ -37,6 +40,7 @@ public class newsDAO {
         }
         return list;
     }
+<<<<<<< HEAD
     public News  getNewsById(int newsid) {
     	String sql = "select * from `news`"+
     "where `newsid` = ?";
@@ -128,6 +132,9 @@ public class newsDAO {
         }
         return null;
     }
+=======
+    
+>>>>>>> 39d0ee0 (aa)
     public static void main(String[] args) {
     	newsDAO dao = new newsDAO();
 		List<News> cate = dao.getNewsAll();

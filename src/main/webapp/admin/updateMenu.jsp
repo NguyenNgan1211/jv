@@ -13,6 +13,7 @@
 </head>
 <body>
 	<jsp:include page="/admin/adheader.jsp" />
+<<<<<<< HEAD
 <div style="text-align: center;margin-top: 100px;">
     <h2>Update menu</h2>
     <c:set value="${menu2 }" var="c" />
@@ -22,6 +23,16 @@
         <input type="text" name="menuname" value="${c.menuname}"  /><br />
         <label>Enter Description</label>
         <input type="text" name="menudescription" value="${c.menudescription}"  /><br />
+=======
+<div style="text-align: center;margin-top: 50px;">
+    <h2>Update menu</h2>
+    <c:set value="${menu2 }" var="c" />
+    <form action="UpdateMenuServlet" method="post">
+        <label>Enter Name</label>
+        <input type="text" name="menuname" value="${c.menuname}" readonly /><br />
+        <label>Enter Description</label>
+        <input type="text" name="menudescription" value="${c.menudescription}" readonly /><br />
+>>>>>>> 39d0ee0 (aa)
         <input type="submit" value="SAVE"><br />
     </form>
 </div>

@@ -5,7 +5,11 @@
 <script>
 function doDelete(menuid){
 	if(confirm("are you sure to delete menu with id = " + menuid)){
+<<<<<<< HEAD
 		window.location = "DeleteMenuServlet?menuid="+ menuid;
+=======
+		window.location = "DeleteMenuServlet?id="+ menuid;
+>>>>>>> 39d0ee0 (aa)
 	}
 }
 </script>
