@@ -294,7 +294,7 @@
 								<div class="p-t-16">
 									<h5 class="p-b-5">
 										<a href="blog-detail-01.html" class="f1-m-3 cl2 hov-cl10 trans-03">
-											You wish lorem ipsum dolor sit amet consectetur 
+											You wish lorem ipsum dolor sit amet consectetur aaaaa
 										</a>
 									</h5>
 
